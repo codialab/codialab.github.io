@@ -1,0 +1,12 @@
+name: jekyll
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - Python
+  - pip
+  - ruby>3.0
+  - c-compiler
+  - cmake
+  - compilers
+  - cxx-compiler

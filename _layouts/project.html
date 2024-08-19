@@ -1,0 +1,10 @@
+---
+layout: default
+---
+
+<!-- collect publications -->
+{% assign array = "" | split: "" %}
+{% for pubName in page.pubs %}
+	{% assign array = array | push : site.data.publications[pubName] %}
+{% endfor %}
+

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{%if page.subtitle %}{{ page.subtitle }} - {% endif %}{%if page.use_name_for_title %}{{ page.name }} – {% elsif page.title %}{{ page.title }} – {% endif %}{{ site.description }}</title>
+
+    {% include meta.html %}
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+	<link rel="icon" href="{{ site.baseurl }}/img/ico/favicon.ico" type="image/x-icon">
+
+  </head>
+
+  <body>
+    <div class="wrapper-masthead">
+      <div class="container">
+        <header class="masthead clearfix">
+          <div class="site-info">
+          <div class="box" style="width: 134px">
+            <!--<a href="{{ site.baseurl }}/" class="site-description"><img src="/img/group-logo/ML-logo_blue_solid-white_large-margin.svg" style="object-fit: cover; width: 100%; height: 100px;"></a>-->
+            <a href="{{ site.baseurl }}/" class="site-description"><img src="/img/icon.png" style="object-fit: cover; width: 100%"></a>
+</div>
+          <a href="{{ site.baseurl }}/" class="site-description">{{ site.description }}</a>
+          </div>
+          <nav style="margin-top: 6px; margin-bottom: 16px">
+            <div style="text-align: right">
+              <a href="{{ site.baseurl }}/people">People</a>
+            </div>
+            <div style="text-align: right">
+              <a href="{{ site.baseurl }}/projects">Software</a>
+            </div>
+            <div style="text-align: right">
+              <a href="{{ site.baseurl }}/news">News</a>
+            </div>
+            <div style="text-align: right">
+              <a href="{{ site.baseurl }}/publications">Publications</a>
+            </div>
+            <div style="text-align: right">
+              <a href="{{ site.baseurl }}/institutes">Affiliations</a>
+            </div>
+          </nav>
+        </header>
+      </div>
+    </div>
+
+    <div id="main" role="main" class="container">
+      {{ content }}
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          {% include svg-icons.html %}
+        </footer>
+      </div>
+    </div>
+
+    {% include analytics.html %}
+  </body>
+</html>
