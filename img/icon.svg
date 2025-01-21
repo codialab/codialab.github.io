@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="169.99998mm"
+   height="100mm"
+   viewBox="0 0 169.99999 100"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <g
+     id="layer1">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:50.8px;font-family:Comfortaa;-inkscape-font-specification:'Comfortaa Bold';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#ffffff;stroke:#ffffff;stroke-width:0.514001;stroke-linecap:round;stroke-linejoin:round"
+       x="4.3804102"
+       y="56.29739"
+       id="text1"><tspan
+         id="tspan1"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Comfortaa;-inkscape-font-specification:'Comfortaa Bold';fill:#ffffff;stroke:#ffffff;stroke-width:0.514"
+         x="4.3804102"
+         y="56.29739">CoDia</tspan></text>
+    <path
+       style="fill:#a1c6ea;fill-opacity:1;stroke:#a1c6ea;stroke-width:2.00974;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+       d="M 5.4107135,68.882595 H 164.58929"
+       id="path1" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.7px;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#ffffff;stroke:#ffffff;stroke-width:0.514;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+       x="2.5071762"
+       y="84.280487"
+       id="text2"><tspan
+         id="tspan2"
+         style="font-size:12.7px;fill:#ffffff;stroke:#ffffff;stroke-width:0.514;stroke-dasharray:none"
+         x="2.5071762"
+         y="84.280487">Computational Diabetology</tspan></text>
+  </g>
+</svg>
