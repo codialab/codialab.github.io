@@ -1,4 +1,4 @@
-#!/bin/awk -f
+#!/usr/bin/env awk -f
 # kludgefactory.  usage: $0 [BIBFILE..]
 function datefmt(ref,	d){
 	if(da[ref] != ""){
