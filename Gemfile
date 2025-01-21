@@ -15,3 +15,9 @@ gem "jekyll-feed", ">= 0.15.1"
 gem "jekyll-paginate", "~> 1.1"
 
 gem "webrick"
+
+gem "csv"
+
+gem "base64"
+
+gem "bigdecimal"

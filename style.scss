@@ -17,10 +17,12 @@ $prusblue: #0b2e4f;
 $airblue: #819ebb;
 $secgrey: #3a3b3c;
 $pinklace: #edd6ff;
+$ddzblue: #153456;
 
-$basecol: $pinklace;
-$textcol: $prusblue;
+$basecol: $ddzblue;
+$textcol: $ddzblue;
 $highcol: $airblue;
+$navcol: white;
 $hovercol: $airblue;
 $titlecol: #3a3b3c;
 $palecol: grey;
@@ -500,7 +502,7 @@ nav {
 //    margin-left: 25px;
   text-align: justify;
   display: inline;
-    color: $textcol; //$darkGray;
+    color: $navcol; //$darkGray;
 //    text-align: right;
     font-weight: 300;
     letter-spacing: 1px;
