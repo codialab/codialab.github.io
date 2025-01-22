@@ -4,7 +4,7 @@ pub-names:
 - Pfeil R
 degree: M. Sc.
 email: rebecca.pfeil@ddz.de
-role: PhD student
+role: Doctoral Researcher
 institutes:
 - hhu
 - ddz

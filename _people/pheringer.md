@@ -4,7 +4,7 @@ pub-names:
 - Heringer P
 degree: M. Sc.
 email: peter.heringer@ddz.de
-role: PhD student
+role: Doctoral Researcher
 institutes:
 - hhu
 - ddz
