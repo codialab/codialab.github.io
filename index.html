@@ -43,30 +43,8 @@ permalink: /
 {% include see-all.html name="news posts" link="news" count=count %}
 {% for post in site.posts limit:site.data.settings.landing-news-posts %}
 <div class="post">
-      <div style="float:right;">
-		{% include person-list-start.html %}
-		{% for person in site.people %}
-			{% assign key = person.title | downcase %}
-			{% if post.authors contains key %}
-				{% include person-list-item.html index=forloop.index size=40 inits='yes' %}
-			{% endif %}
-		{% endfor %}
-		{% include person-list-end.html %}
-	  </div>
-      <h3 class="mainHeading">{{ post.title }}</h3>
+      <h4 class="mainHeading">{{ post.content }}</h4>
 	  <div style="color: gray;">{{ post.date | date: "%B %e, %Y" }}</div>
-      {% if post.excerpt.size != post.content.size %}
-      <div class="postBody excerpt">
-      {% else %}
-      <div class="postShort excerpt">
-      {% endif %}
-                {{ post.excerpt }}
-      </div>
-      {% if post.excerpt.size != post.content.size %}
-      <div class="linkMore">
-			<a href="{{ site.baseurl }}{{ post.url }}">{% include post-link-more.html %}</a>
-      </div>
-      {% endif %}
 </div>
 {% endfor %}
 </div>
