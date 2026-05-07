@@ -5,8 +5,9 @@
 // IMPORTS
 //
 
-@import "reset";
-@import "variables";
+@use "sass:meta";
+@use "reset";
+@use "variables";
 // Syntax highlighting @import is at the bottom of this file
 
 /**************/
@@ -34,8 +35,8 @@ html {
 }
 
 body {
-	background: $white;
-  font: 16px/1.4 $helvetica;
+	background: variables.$white;
+  font: 16px/1.4 variables.$helvetica;
   color: $textcol;
     font-weight: 300;
 }
@@ -58,14 +59,14 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $helveticaNeue;
+  font-family: variables.$helveticaNeue;
   color: $textcol;
 
 //  line-height: 1.7;
   margin: 1em 0 15px;
   padding: 0;
 
-  @include mobile {
+  @include variables.mobile {
     line-height: 1.4;
   }
 }
@@ -203,7 +204,7 @@ xsup, .xsup {
 	margin: auto;
 //	object-fit: contain;
 
-  @include mobile {
+  @include variables.mobile {
 	clear: right;
   }
 }
@@ -275,12 +276,12 @@ a:hover {filter:grayscale(100%);}
 
 // Specify the color of the selection
 ::-moz-selection {
-  color: $black;
-  background: $lightGray;
+  color: variables.$black;
+  background: variables.$lightGray;
 }
 ::selection {
-  color: $black;
-  background: $lightGray;
+  color: variables.$black;
+  background: variables.$lightGray;
 }
 
 .title
@@ -322,7 +323,7 @@ a:hover {filter:grayscale(100%);}
 .wrapper-masthead {
   margin-bottom: 5px;
   background-color: $basecol;
-  border-bottom: 1px solid $lightGray;
+  border-bottom: 1px solid variables.$lightGray;
 }
 
 .masthead {
@@ -335,7 +336,7 @@ a:hover {filter:grayscale(100%);}
     }
   }
 
-  @include mobile {
+  @include variables.mobile {
     text-align: center;
   }
 }
@@ -361,7 +362,7 @@ a:hover {filter:grayscale(100%);}
 //  margin-left: 15px;
   padding: 5px;
 
-  @include mobile {
+  @include variables.mobile {
     float: none;
     display: block;
     margin: 0 auto;
@@ -384,7 +385,7 @@ a:hover {filter:grayscale(100%);}
 	background-position: center;
 	padding: 5px;
 	display: inline-block;
-  @include mobile {
+  @include variables.mobile {
     float: none;
     display: block;
     margin: 0 auto;
@@ -404,7 +405,7 @@ a:hover {filter:grayscale(100%);}
 	padding: 5px;
 	display: inline-block;
 
-  @include mobile {
+  @include variables.mobile {
     float: none;
     display: block;
     margin: 0 auto;
@@ -426,7 +427,7 @@ a:hover {filter:grayscale(100%);}
 .site-info {
 
 	float: left;
-  @include mobile {
+  @include variables.mobile {
     float: none;
     display: block;
     margin: 0;
@@ -437,7 +438,7 @@ a:hover {filter:grayscale(100%);}
   margin: 0;
   color: white;//$darkGray;
 //  cursor: pointer;
-  font-family: $helveticaNeue;
+  font-family: variables.$helveticaNeue;
   font-weight: 300;
   font-size: 28px;
   letter-spacing: 1px;
@@ -462,7 +463,7 @@ a:hover {filter:grayscale(100%);}
   color: $textcol;
   font-size: 12px;
 
-  @include mobile {
+  @include variables.mobile {
     margin: 3px 0;
   }
 }
@@ -473,10 +474,10 @@ nav {
 //  width: 50%;
   margin-top: 0px; // @TODO: Vertically middle align	← rocket science
 //  margin-right: 15px;
-  font-family: $helveticaNeue;
+  font-family: variables.$helveticaNeue;
   font-size: 22px;
 
-  @include mobile {
+  @include variables.mobile {
     float: none;
     margin-top: 9px;
     display: block;
@@ -488,7 +489,7 @@ nav {
 	  text-align: justify;
 	  height: 1.5em;
 	  margin-top: -2px;
-  @include mobile {
+  @include variables.mobile {
     text-align: center;
     }
 	}
@@ -512,7 +513,7 @@ nav {
 //      color: $hovercol;
     }
 
-    @include mobile {
+    @include variables.mobile {
       margin: 0 10px;
 //      color: $blue;
     }
@@ -536,9 +537,9 @@ nav {
 .post {
   blockquote {
     margin: 1.8em .8em;
-    border-left: 2px solid $gray;
+    border-left: 2px solid variables.$gray;
     padding: 0.1em 1em;
-    color: $gray;
+    color: variables.$gray;
     font-size: 12px;
     font-style: italic;
   }
@@ -600,7 +601,7 @@ ul.link-list {
   margin-bottom: 20px;
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
-  background-color: $lightGray;
+  background-color: variables.$lightGray;
 }
 
 footer {
@@ -611,5 +612,5 @@ footer {
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
-@import "highlights";
-@import "svg-icons";
+@include meta.load-css("highlights");
+@include meta.load-css("svg-icons");

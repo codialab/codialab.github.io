@@ -6,15 +6,15 @@ git_source(:github) { |repo_name| "https://github.com/#{repo_name}" }
 
 # gem "rails"
 
-gem "jekyll", "~> 4.2"
+gem "jekyll", "~> 4.4"
 
 gem "jekyll-sitemap", "~> 1.4"
 
-gem "jekyll-feed", ">= 0.15.1"
+gem "jekyll-feed", ">= 0.17"
 
 gem "jekyll-paginate", "~> 1.1"
 
-gem "webrick"
+gem "webrick", "~> 1.9"
 
 gem "csv"
 
