@@ -42,10 +42,16 @@ permalink: /
 {% include title-bar.html title="News" %}
 {% include see-all.html name="news posts" link="news" count=count %}
 {% for post in site.posts limit:site.data.settings.landing-news-posts %}
-<div class="post">
-      <h4 class="mainHeading">{{ post.content }}</h4>
-	  <div style="color: gray;">{{ post.date | date: "%B %e, %Y" }}</div>
-</div>
+<article class="post">
+  <!-- Added a bottom margin to restore the spacing -->
+  <h4 class="mainHeading" style="margin-bottom: 10px;">
+    <!-- Added styling so the link inherits standard text color but stays clickable -->
+    <a href="{{ site.baseurl }}{{ post.url }}" style="color: inherit; text-decoration: none;">
+      {{ post.title }}
+    </a>
+  </h4>
+  <div style="color: gray;">{{ post.date | date: "%B %e, %Y" }}</div>
+</article>
 {% endfor %}
 </div>
 {% endif %}
